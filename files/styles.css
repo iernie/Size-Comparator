@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(background.png) repeat;
+	color: #fff;
+	font-family: arial;
+	margin: 5% 0 0 0;
+}
+#container {
+	width: 666px;
+	margin: 0 auto;
+}
+#wrapper {
+	background: #1e1e1e;
+	padding: 10px;
+	border: 2px solid #fff;
+	border-radius: 7px;
+}
+h1 {
+	margin: 0 0 -9px 0;
+}
+canvas {
+	float: left;
+	background: #fff;
+	margin: 2px;
+	border-radius: 7px;
+	padding: 5px;
+}
+form {
+	clear: both;
+}
+input[type="number"] {
+	width: 40px;
+	border: none;
+}
+input {
+	padding: 5px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #1e1e1e;
+	background: #fff;
+	margin: 10px 0;
+}
+.red {
+	color: rgb(200,50,0);
+}
+.blue {
+	color: rgb(0,100,200);
+}
+.green {
+	color: rgb(50,200,0);
+}
+.yellow {
+	color: rgb(255,255,0);
+}
+.left {
+	float: left;
+	margin: 0 30px 0 0;
+}
+.clearer {
+	clear: both;
+}
+p {
+	font-style: italic;
+	margin: 5px 0;
+	background: #2f2f2f;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 10pt;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	padding: 2px;
+}
+
+a:hover {
+	color: #1e1e1e;
+	background: #fff;
+	padding: 2px;
+}

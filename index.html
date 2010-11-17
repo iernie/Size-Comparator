@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Size Comparator</title>
+		<meta charset="UTF-8">
+	    <meta name="keywords" content="size comparator compare sizes html5">
+	    <meta name="description" content="Size Comparator">
+	    <meta name="author" content="ernie">
+	    <meta name="ROBOTS" content="ALL">
+		<link rel="stylesheet" href="files/styles.css">
+		<script src="files/scripts.js"></script>
+		<link rel="icon" type="image/ico" href="files/favicon.ico">
+	</head>
+	<body onload="draw();">
+		<div id="container">
+			<h1>Size comparator</h1>
+			<div id="wrapper">
+				<canvas id="front" width="413" height="416">
+					Front View
+				</canvas>
+				<canvas id="side" width="201" height="201">
+					Side View
+				</canvas>
+				<canvas id="top" width="201" height="201">
+					Top View
+				</canvas>
+				<form>
+					<p>
+						Compare the sizes of two or more objects.<br>
+						Please enter the width, height and depth of the objects in any unit of measurement (mm, inches, etc).<br>
+						Use the scale to adjust the size of the objects in the views.<br>
+						Note: All fields for an object are required.
+					</p>
+					<div class="left">
+						<label><span class="red">Red</span> Object </label>
+						<input type="number" min="0" max="250" step="1" value="0" id="xone" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="yone" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="zone" onchange="draw();"><br>
+						
+						<label><span class="blue">Blue</span> Object </label>
+						<input type="number" min="0" max="250" step="1" value="0" id="xtwo" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="ytwo" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="ztwo" onchange="draw();"><br>
+						
+						<label>Scale </label>
+						<input type="range" id="scaler" min="1" max="10" step="1" value="1" onchange="draw();"><br>
+					</div>
+					<div class="left">
+						<label><span class="green">Green</span> Object </label>
+						<input type="number" min="0" max="250" step="1" value="0" id="xthree" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="ythree" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="zthree" onchange="draw();"><br>
+						
+						<label><span class="yellow">Yellow</span> Object </label>
+						<input type="number" min="0" max="250" step="1" value="0" id="xfour" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="yfour" onchange="draw();">
+						<input type="number" min="0" max="250" step="1" value="0" id="zfour" onchange="draw();"><br>
+						
+						<input type="checkbox" id="ontop" onclick="draw();">
+						<label>Place objects on top of each other</label>
+					</div>
+					
+					<div class="clearer"></div>
+					<input type="button" value="Compare" onclick="draw();">
+					<input type="reset" value="Reset" onclick="draw();">
+				</form>
+			</div>
+			&copy; 2010 egz.me
+		</div>
+	</body>
+</html>
